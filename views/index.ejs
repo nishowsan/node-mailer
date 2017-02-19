@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Document</title>
+  <style type="text/css">
+  .difbutt{
+    position: absolute;
+    left: 0;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <button id="callbutt" class="difbutt"><i class="glyphicon glyphicon-bell"></i></button>
+
+    <div class="form-group well ">
+    <form class="" action="/" method="post">
+    <style type="text/css">
+    .form-control{
+      width: 200px;
+      border-radius: 3px;
+      height: 20px;
+    }
+    .form-group{
+      padding: 8px 10px;
+      margin: 0.6px;
+    }
+    .butt{
+      background-color: #222;
+      cursor: pointer;
+      color: white;
+      border-radius: 3px;
+      border-style: none;
+    }
+    .butt:hover{
+      background-color: #111;
+      transition: all 1s;
+    }
+    #call:hover{
+      cursor: pointer;
+    }
+    .well{
+      width : 400px;
+    }
+    .form-new{
+      width : 370px;
+    }
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#callbutt').click(function(event){
+        $('#tobehidden1').fadeToggle(740);
+        $('#tobehidden2').fadeToggle(740);
+        $('#tobehidden3').fadeToggle(740);
+        $('#tobehidden4').fadeToggle(740);
+        $('#tobehidden5').fadeToggle(740);
+        $('.well').fadeToggle(700);
+
+      });
+    });
+    </script>
+    <br>
+      <span id="call">Login : </span><input id="tobehidden1" type="text" name="login" value="" required
+      class="form-control" >
+      <hr> 
+      <span id="call">Password :</span><input id="tobehidden2" type="password" name="pass" value="" required
+      class="form-control">
+      <br>
+      <span id="call">To : </span>
+      <input id="tobehidden3" type="text" name="to" value="" class="form-control">
+      <br>
+      <span id="call">Subject : </span>
+      <input id="tobehidden4" type="text" name="head" class="form-control">
+      <br>
+      <span id="call">Message</span>
+      <textarea id="tobehidden5" name="text" rows="8" cols="80" required class="form-control form-new"></textarea>
+      <br>
+      <input type="submit" name="" value="submit" class="butt">
+    </form>
+  </div>
+  </div>
+</body>
+</html>

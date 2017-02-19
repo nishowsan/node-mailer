@@ -1,0 +1,26 @@
+span{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: sans-serif;
+}
+
+button{
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  background-color: #333;
+}
+button:hover{
+  background-color: #111;
+  transition: all 1s;
+}
+
+.container-fluid{
+  position: absolute;
+  left: 35%;
+}
+body{
+  margin: 20px;
+}
